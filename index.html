@@ -5,26 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>French B1 Bootcamp – 5 Week Intensive Program</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sacramento&family=Titan+One&display=swap');
 
   :root {
-    --ink: #1a1a2e;
-    --paper: #f7f6f2;
-    --blue: #2563eb;
-    --blue-light: #dbeafe;
-    --violet: #7c3aed;
-    --violet-light: #ede9fe;
-    --rose: #e11d48;
-    --rose-light: #ffe4e6;
-    --amber: #d97706;
-    --amber-light: #fef3c7;
-    --green: #059669;
-    --green-light: #d1fae5;
-    --slate: #64748b;
-    --border: #e2e8f0;
-    --card: #ffffff;
-    --sidebar-w: 220px;
-  }
+   :root {
+  --ink: #4A3E3D;          /* Un marrón/gris muy suave en lugar de negro puro */
+  --paper: #FFFDF6;        /* Fondo general: un blanco hueso / amarillo crema pastel */
+  --blue: #FF8A98;         /* Rosa pastel vibrante para botones principales */
+  --blue-light: #FFE5EC;   /* Rosa pastel muy suave para fondos secundarios */
+  --violet: #FFF5CC;       /* Amarillo pastel suave (reemplaza al morado antiguo) */
+  --violet-light: #FFFBE6; /* Amarillo pastel extra claro */
+  --rose: #FFC2CD;         /* Rosa pastel intermedio */
+}
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -35,7 +27,26 @@
     display: flex;
     min-height: 100vh;
   }
+/* --- NUEVAS TIPOGRAFÍAS --- */
 
+/* 1. Texto Normal (Poppins) */
+body, input, textarea, button, span, p, li {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* 2. Títulos (Titan One) */
+h1, h2, h3, .main-title {
+  font-family: 'Titan One', cursive !important;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+/* 3. Frase Motivadora (Sacramento) */
+.quote-container p, blockquote, q, .banner-frase p {
+  font-family: 'Sacramento', cursive !important;
+  font-size: 32px !important; /* La hacemos un poco más grande para que la cursiva se lea perfecta */
+  font-weight: 400;
+}
   /* ── SIDEBAR ── */
   #sidebar {
     width: var(--sidebar-w);
